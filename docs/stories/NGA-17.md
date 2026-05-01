@@ -1,20 +1,22 @@
-# NGA-17: Hello Page Documentation
+# NGA-17: AI Hello World Page
 
 ## Overview
-NGA-17 delivers a basic HTML page at `web/pages/hello.html` to satisfy requirement `REQ-AI-101`. The page provides a visible greeting using a single H1 heading.
+NGA-17 delivers a minimal web page to validate the SDLC agent flow from requirement to implementation.
+The story implements a static HTML page that displays the required heading text.
 
 ## Functional Details
+- Source requirement: `docs/requirements/REQ-AI-101.txt`
 - Implemented file: `web/pages/hello.html`
-- Page uses standard HTML5 structure (`<!DOCTYPE html>`, `html`, `head`, `body`)
-- Heading rendered in body: `Hello World from AI Agent`
-- Page title is set to `Hello`
+- Page behavior:
+  - Renders a valid HTML document with `<!DOCTYPE html>`, `html`, `head`, and `body`.
+  - Displays the exact heading in H1: "Hello World from AI Agent".
 
 ## Acceptance Criteria
 - Page renders correctly in a browser: Met
-- H1 text is visible: Met (`Hello World from AI Agent`)
+- H1 text is visible: Met
 - Proper HTML structure is used: Met
 
 ## Future Scope
-- Add basic styling for visual consistency
-- Add simple navigation link back to project landing page
-- Add automated UI check to validate heading content in CI
+- Add basic CSS styling for readability.
+- Add a smoke test to validate heading text.
+- Integrate this page into a simple navigation flow for demo walkthroughs.
