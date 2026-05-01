@@ -23,3 +23,6 @@ Requirement → JIRA → Documentation → Development → PR → Review
 - Documentation generated
 - Code committed via feature branch
 - PR raised and reviewed
+
+## Story Documentation
+- NGA-17: docs/stories/NGA-17.md
