@@ -282,7 +282,8 @@ async function main() {
     results.push(result);
   }
 
-  await saveCSV(results, outputCsv);
+  const redirectResults = results.filter((r) => r.is_redirect);
+  await saveCSV(redirectResults, outputCsv);
 
   const filteredUrls = results
     .filter((r) => !r.error)
