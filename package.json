@@ -5,7 +5,9 @@
   "type": "module",
   "main": "sitemap_redirect_checker.js",
   "scripts": {
-    "start": "node sitemap_redirect_checker.js"
+    "start": "node scripts/sitemap_redirect_checker.js",
+    "generate:redirect-report": "node scripts/sitemap_redirect_checker.js docs/requirements/SiteMapGeneratorReq/sample_sitemap.xml",
+    "generate:redirect-report:limited": "node scripts/sitemap_redirect_checker.js docs/requirements/SiteMapGeneratorReq/sample_sitemap.xml web/pages/redirect_report.csv web/pages/redirect_report_resolved.xml --max-urls=10"
   },
   "dependencies": {
     "axios": "^1.7.0",
