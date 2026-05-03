@@ -9,7 +9,6 @@
  * Dependencies: axios, fast-xml-parser
  *   npm install
  */
-
 import fs from "fs";
 import path from "path";
 import { createWriteStream } from "fs";
@@ -83,7 +82,7 @@ async function checkRedirect(url, timeout = REQUEST_TIMEOUT_MS) {
     result.status_code = final.status;
     result.redirect_chain = final.chain;
     result.is_redirect = final.chain.length > 0;
-    result.redirect_type = final.chain.length > 0 ? String(final.chain[0].status) : "";
+    result.redirect_type = final.chain.length > 0 ? extractRedirectType(final.chain[0]) : "";
   } catch (err) {
     result.error = formatError(err);
   }
@@ -131,6 +130,11 @@ function resolveLocation(fromUrl, locationHeader) {
   } catch {
     return locationHeader;
   }
+}
+
+function extractRedirectType(chainEntry) {
+  const match = String(chainEntry ?? "").match(/^(\d{3}):/);
+  return match ? match[1] : "";
 }
 
 function formatError(err) {
