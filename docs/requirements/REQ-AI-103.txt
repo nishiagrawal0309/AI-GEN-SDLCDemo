@@ -1,0 +1,18 @@
+# Requirement: TEST SDLC Hello World Page
+
+## Description
+Create a simple HTML page displaying "SDLC Hello World from AI Agent"
+in H1.
+
+## File Details
+- File Name: SDLCTest.html
+- Path: /web/pages/
+
+## Acceptance Criteria
+- Page renders correctly in browser
+- H1 text is visible
+- Proper HTML structure is used
+
+## Notes / Constraints
+- Basic styling can be added if needed (inline or external)
+- Keep implementation simple for demo
