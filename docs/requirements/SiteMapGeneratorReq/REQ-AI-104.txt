@@ -3,12 +3,13 @@
 ## Description
 Replace 301/302 links from the sitemaps XML (sample_sitemap.xml) with Final destination 
 and remove 404 links.At the end generate a CSV file with all the
-301/302 URLs and their final URL status at given path.
+URLs and their status with final URL at given path.Also generate optimized sitemap xml.
 
 ## File Details
-- File Name: sample_sitemap.xml
-- Path: /web/pages/
+- Input File Name: sample_sitemap.xml
+- Output files Path: /web/pages/
 
 ## Acceptance Criteria
 - Proper CSV file should be generated at provided path
 - CSV should have header columns ("original_url","final_url","status_code", "is_redirect","redirect_type","redirect_chain","error","checked_at")
+- Generated sitemap xml should contain only resolved urls
