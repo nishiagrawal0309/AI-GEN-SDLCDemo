@@ -7,6 +7,8 @@ Review PR and provide decision and post the review findings as a comment on PR a
 - Code correctness
 - HTML structure
 - Best practices
+- If critical issues found → mark as CHANGES_REQUIRED
+- If minor issues → APPROVED with suggestions
 
 ## Output
 - Comments
