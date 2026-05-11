@@ -1,0 +1,15 @@
+# Requirement: AI Welcome Demo Test Page
+
+## Description
+Create a simple HTML page displaying two texts in body section
+1. "Hello World Demo Test AI Agent" in H2.
+2. "Welcome to this SDLC Automation Demo"
+
+## File Details
+- File Name: demoTestPage.html
+- Path: /web/pages/
+
+## Acceptance Criteria
+- Page renders correctly in browser
+- H2 text is visible
+- Proper HTML structure is used
