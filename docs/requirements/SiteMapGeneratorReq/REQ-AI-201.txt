@@ -1,15 +1,16 @@
-# Requirement: AI SiteMap Redirect Resolution
+# Requirement: AI Assited SiteMap Optimization
 
 ## Description
 Replace 301/302 links from the sitemaps XML (sample_sitemap.xml) with Final destination 
 and remove 404 links.At the end generate a CSV file with all the
-URLs and their status with final URL at given path.Also generate optimized sitemap xml.
+URLs and their status with final URL at given path.
+Also generate optimized sitemap xml at same given path.
 
 ## File Details
 - Input File Name: sample_sitemap.xml
 - Output files Path: /web/pages/
 
 ## Acceptance Criteria
-- Proper CSV file should be generated at provided path
+- Proper/Valid CSV file should be generated at provided path
 - CSV should have header columns ("original_url","final_url","status_code", "is_redirect","redirect_type","redirect_chain","error","checked_at")
 - Generated sitemap xml should contain only resolved urls
